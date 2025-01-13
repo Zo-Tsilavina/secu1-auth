@@ -1,3 +1,4 @@
+/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,63 +6,93 @@ body {
     background-color: #f4f4f9;
     color: #333;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-}
-
-h1 {
-    color: #555;
-    margin-bottom: 30px;
-}
-
-div {
-    margin: 20px 0;
+  }
+  
+  /* Conteneur principal */
+  .container {
+    width: 100%;
+    max-width: 400px;
     padding: 20px;
-    background: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    border-radius: 8px;
     text-align: center;
-}
-
-input {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 90%;
-    font-size: 16px;
+  }
+  
+  /* Titres */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  
+  /* Champs de formulaire */
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
     display: block;
-}
-
-button {
-    padding: 10px 15px;
-    background-color: #007BFF;
-    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Boutons */
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-    width: 100%;
-}
-
-button:hover {
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
     background-color: #0056b3;
-}
-
-p {
+  }
+  
+  /* Liste des connexions */
+  .logins-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+    text-align: left;
+  }
+  
+  .logins-list li {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  /* Messages de sortie */
+  #output {
     margin-top: 15px;
     font-size: 14px;
-    color: #666;
-}
-
-p.error {
-    color: #ff0000;
-}
-
-p.success {
-    color: #28a745;
-}
+    color: #d9534f; /* Rouge pour les messages d'erreur */
+  }
+  
